@@ -91,6 +91,27 @@ query{
   }
 }
 
+query{
+  getAllUsers(id:1){
+    id,
+    firstName,
+    lastName,
+    email,
+    password
+  }
+}
+
+
+mutation {
+  createUser(firstName: "Soumyadip", lastName: "Chowdhury", email: "soumya.note@gmail.com", password: "y0pWrGzmDz") {
+    firstName
+    lastName
+    email
+    password
+  }
+}
+
+
 
 
 */
